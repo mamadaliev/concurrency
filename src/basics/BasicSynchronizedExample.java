@@ -1,4 +1,4 @@
-package basics.synchronizes;
+package basics;
 
 public class BasicSynchronizedExample {
 
