@@ -1,4 +1,4 @@
-package concurreny;
+package concurrect;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
