@@ -1,4 +1,4 @@
-package basics.threads;
+package basics;
 
 public class ThreadLambdaExample {
 
