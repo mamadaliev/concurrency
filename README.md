@@ -1,12 +1,12 @@
 # multithreading
 Examples of the basics of multithreading and concurrency in Java for beginners.
 
-- [Basics]()
+- **[Basics]()**
     - [Thread]()
     - [Runnable]()
     - [ThreadLocal]()
     - [ThreadGroup]()
-- [Concurrent]()
+- **[Concurrent]()**
     - [Atomics]()
     - [Collections]()
     - [Executors]()
@@ -20,13 +20,26 @@ Examples of the basics of multithreading and concurrency in Java for beginners.
 ### ThreadLocal
 ### ThreadGroup
 ### Synchronized collections
+```java
+class Example {
+    public static void main(String[] args){
+        Collection<Integer> collection                  = Collections.synchronizedCollection(new Vector<>());
+        List<Integer> syncList                          = Collections.synchronizedList(new ArrayList<>());
+        Set<Integer> syncSet                            = Collections.synchronizedSet(new HashSet<>());
+        SortedSet<Integer> syncSortedSet                = Collections.synchronizedSortedSet(new TreeSet<>());
+        Map<Integer, Integer> syncQueue                 = Collections.synchronizedMap(new HashMap<>());
+        NavigableMap<Integer,Integer> syncNavigableMap  = Collections.synchronizedNavigableMap(new TreeMap<>());
+        SortedMap<Integer,Integer> syncSortedMap        = Collections.synchronizedNavigableMap(new TreeMap<>());
+    }
+}
+```
 
 ## Concurrent
 ### Atomics
 
 ### Collections
 #### CopyOnWriteArrayList
-Analogue of ArrayList with CopyOnWrite algorithm.
+###### Analogue of ArrayList with CopyOnWrite algorithm.
 
 #### CopyOnWriteArraySet
 Implementation of the Set interface using CopyOnWriteArrayList as the basis.
