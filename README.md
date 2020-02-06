@@ -15,13 +15,50 @@ Examples of the basics of multithreading and concurrency in Java for beginners.
     - [Synchronizes]()
 
 ## Basics
+
 ### Thread
+```java
+class Demo {
+    public static void main(String[] args){
+        // #1
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                System.out.println(Thread.currentThread());
+            }
+        }).start();
+
+        // #2 with lambda
+        new Thread(() -> {
+            System.out.println(Thread.currentThread());
+        }).start();
+    }
+}
+```
+
 ### Runnable
+```java
+class MyThread implements Runnable {
+    
+    @Override
+    public void run() {
+        System.out.println(Thread.currentThread());
+    }
+}
+
+class Demo {
+    public static void main(String[] args){
+        Thread t1 = new Thread(new MyThread());
+        t1.start();
+    }
+}
+```
+
 ### ThreadLocal
 ### ThreadGroup
 ### Synchronized collections
 ```java
-class Example {
+class Demo {
     public static void main(String[] args){
         Collection<Integer> collection                  = Collections.synchronizedCollection(new Vector<>());
         List<Integer> syncList                          = Collections.synchronizedList(new ArrayList<>());
@@ -39,7 +76,7 @@ class Example {
 
 ### Collections
 #### CopyOnWriteArrayList
-###### Analogue of ArrayList with CopyOnWrite algorithm.
+Analogue of ArrayList with CopyOnWrite algorithm.
 
 #### CopyOnWriteArraySet
 Implementation of the Set interface using CopyOnWriteArrayList as the basis.
