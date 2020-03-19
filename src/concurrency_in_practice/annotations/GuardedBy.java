@@ -1,4 +1,4 @@
-package concurrency_in_action.annotations;
+package concurrency_in_practice.annotations;
 
 public @interface GuardedBy {
     String value();
