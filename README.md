@@ -4,6 +4,8 @@ Examples of the basics of multithreading and concurrency in Java for beginners.
 - **[Basics]()**
     - [Thread]()
     - [Runnable]()
+    - [Volatile]()
+    - [Synchronized]()
     - [ThreadLocal]()
     - [ThreadGroup]()
 - **[Concurrent]()**
@@ -15,23 +17,24 @@ Examples of the basics of multithreading and concurrency in Java for beginners.
     - [Synchronizes]()
 
 ## Basics
+There are two ways to create threads in Java: 
+by implementing the **Runnable** interface and 
+by extending the **Thread** class.
 
 ### Thread
 ```java
-class Demo {
-    public static void main(String[] args){
-        // #1
-        new Thread(new Runnable() {
-            @Override
-            public void run() {
-                System.out.println(Thread.currentThread());
-            }
-        }).start();
+class Main {
+    public static void main(String[] args) {        
+        // #1 by extending the class Thread
+        MyThread thread = new MyThread().start();
+    }
+}
 
-        // #2 with lambda
-        new Thread(() -> {
-            System.out.println(Thread.currentThread());
-        }).start();
+class MyThread extends Thread {
+
+    @Override
+    public void run() {
+        System.out.println(Thread.currentThread());
     }
 }
 ```
@@ -46,20 +49,42 @@ class MyThread implements Runnable {
     }
 }
 
-class Demo {
-    public static void main(String[] args){
+class Main {
+    public static void main(String[] args) {
+        
+        // #1 simple way
         Thread t1 = new Thread(new MyThread());
         t1.start();
+
+        // #2 with anonymous class
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                System.out.println(Thread.currentThread());
+            }
+        }).start();
+
+        // #3 with lambda (same as #2)
+        new Thread(() -> {
+            System.out.println(Thread.currentThread());
+        }).start();
     }
 }
 ```
 
+### Volatile
+
+### Synchronized
+
 ### ThreadLocal
+
 ### ThreadGroup
+
 ### Synchronized collections
 ```java
-class Demo {
-    public static void main(String[] args){
+class Main {
+
+    public static void main(String[] args) {
         Collection<Integer> collection                  = Collections.synchronizedCollection(new Vector<>());
         List<Integer> syncList                          = Collections.synchronizedList(new ArrayList<>());
         Set<Integer> syncSet                            = Collections.synchronizedSet(new HashSet<>());
