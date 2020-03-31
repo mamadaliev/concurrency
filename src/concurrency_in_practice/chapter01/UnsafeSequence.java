@@ -1,6 +1,6 @@
-package concurrency_in_action.chapter01;
+package concurrency_in_practice.chapter01;
 
-import concurrency_in_action.annotations.NotThreadSafe;
+import concurrency_in_practice.annotations.NotThreadSafe;
 
 @NotThreadSafe
 public class UnsafeSequence {
