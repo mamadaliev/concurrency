@@ -40,8 +40,8 @@ public class VolatileViewsCounter {
      * We get a race condition problem,
      * because the increment operation is not atomic.
      * For solution this problem use:
-     * - synchronized method
-     * - synchronized block
+     * 1. Use synchronized method.
+     * 2. Use synchronized block.
      */
     @NotThreadSafe
     @SuppressWarnings("NonAtomicOperationOnVolatileField")
