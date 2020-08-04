@@ -4,7 +4,7 @@ import java.util.PriorityQueue;
 import java.util.Queue;
 
 /*
-    Provider-Consumer Synchronize Problem
+    Provider-Consumer Synchronize Problem with wait() and notifyAll()
 */
 public class A<E> {
 
