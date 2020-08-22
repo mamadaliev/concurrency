@@ -11,6 +11,7 @@ public class A<T> {
     }
 
 
+    @SuppressWarnings("NonAtomicOperationOnVolatileField")
     public static void main(String[] args) {
         A<Integer> a = new A<>();
 
