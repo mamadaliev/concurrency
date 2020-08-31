@@ -1,0 +1,36 @@
+# concurrency-practice
+Code examples of the multithreading basics and concurrency in Java language for beginners.
+
+## Basics
+. Starting threads.
+. Lifecycle of threads.
+. Volatile.
+. Synchronized.
+. Lock objects.
+. Thread Pools.
+. Countdown Latches.
+. Producer-Consumer.
+. Wait and Notify.
+. Low-Level.
+. Producer-Consumer.
+. Re-entrant Locks.
+. Deadlock.
+. Semaphores.
+. Callable and Future.
+. Interrupting Threads.
+
+## Concurrent Collections
+
+## Atomics
+
+## Locks
+
+## Synchronizers
+
+## Blocking Queues
+
+## Executors
+
+## Contribute
+For any problems, comments, or feedback 
+please create an issue https://github.com/egnaf/concurrency-practice/issues[here].
