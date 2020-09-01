@@ -2,7 +2,7 @@
 Code examples of the multithreading basics and concurrency in Java language for beginners.
 
 ### Basics
-. [Concurrency vs Parallelism](concurrecny_vs_parallelism.adoc)
+. link:concurrecny_vs_parallelism.adoc[Concurrency vs Parallelism]
 . Thread vs Process
 . Starting threads
 . Lifecycle of threads
