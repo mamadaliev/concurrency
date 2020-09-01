@@ -1,25 +1,25 @@
 # concurrency-practice
 Code examples of the multithreading basics and concurrency in Java language for beginners.
 
-## Basics
-. Concurrency vs Parallelism
+### Basics
+. [Concurrency vs Parallelism](concurrecny_vs_parallelism.adoc)
 . Thread vs Process
 . Starting threads
 . Lifecycle of threads
 . Volatile
 . Synchronized
 
-## Collections
+### Collections
 
-## Atomics
+### Atomics
 
-## Locks
+### Locks
 
-## Synchronizers
+### Synchronizers
 
-## Blocking Queues
+### Blocking Queues
 
-## Executors
+### Executors
 
 ## Contribute
 For any problems, comments, or feedback 
