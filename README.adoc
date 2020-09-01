@@ -2,24 +2,14 @@
 Code examples of the multithreading basics and concurrency in Java language for beginners.
 
 ## Basics
-. Starting threads.
-. Lifecycle of threads.
-. Volatile.
-. Synchronized.
-. Lock objects.
-. Thread Pools.
-. Countdown Latches.
-. Producer-Consumer.
-. Wait and Notify.
-. Low-Level.
-. Producer-Consumer.
-. Re-entrant Locks.
-. Deadlock.
-. Semaphores.
-. Callable and Future.
-. Interrupting Threads.
+. Concurrency vs Parallelism
+. Thread vs Process
+. Starting threads
+. Lifecycle of threads
+. Volatile
+. Synchronized
 
-## Concurrent Collections
+## Collections
 
 ## Atomics
 
