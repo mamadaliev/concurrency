@@ -2,25 +2,40 @@
 Code examples of the multithreading basics and concurrency in Java language for beginners.
 
 == Basics
-. link:doc/Concurrency_vs_Parallelism.adoc[Concurrency vs Parallelism]
-. link:doc/Thread_vs_Process.adoc[Thread vs Process]
-. link:doc/Starting_threads.adoc[Starting threads]
-. link:doc/Lifecycle_of_threads.adoc[Lifecycle of threads]
-. link:doc/Volatile.adoc[Volatile]
-. link:doc/Synchronized.adoc[Synchronized]
+. link:doc/basics.adoc#Concurrency+vs+Parallelism[Concurrency vs Parallelism]
+. link:doc/basics.adoc#Thread+vs+Process[Thread vs Process]
+. link:doc/basics.adoc#Starting+threads[Starting threads]
+. link:doc/basics.adoc#Lifecycle+of+threads[Lifecycle of threads]
+. link:doc/basics.adoc#Volatile[Volatile]
+. link:doc/basics.adoc#Synchronized[Synchronized]
 
 == Concurrency
 === Collections
+. ConcurrentHashMap
 
 === Atomics
+. AtomicInteger
+. AtomicBoolean
 
 === Locks
+. Lock
+. Condition
+. ReentrantLock
+. ReadWriteLock
 
-=== Synchronizers
+=== Synchronizes
+. Semaphore
+. CyclicBarrier
+. CountDownLatch
+. SynchronousQueue
+. Exchanger
+. Phaser
 
 === Blocking Queues
+. BlockingQueue
 
 === Executors
+. ExecutorService
 
 == Contribute
 For any problems, comments, or feedback 
