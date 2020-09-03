@@ -1,7 +1,19 @@
 = Basics
+
+[#_concurrency_vs_parallelism]
 == Concurrency vs Parallelism
+
+[#_thread_vs_process]
 == Thread vs Process
+
+[#_starting_threads]
 == Starting threads
+
+[#_lifecycle_of_threads]
 == Lifecycle of threads
+
+[#_volatile]
 == Volatile
+
+[#_synchronized]
 == Synchronized
