@@ -1,7 +1,7 @@
-= concurrency-practice
-Code examples of the multithreading basics and concurrency in Java language for beginners.
+= concurrency
+Code examples of the multithreading basics and concurrency in JAVA language for beginners.
 
-== Basics
+== Basics of multithreading
 . link:doc/basics.adoc#Concurrency-vs-Parallelism[Concurrency vs Parallelism]
 . link:doc/basics.adoc#Thread-vs-Process[Thread vs Process]
 . link:doc/basics.adoc#Starting-threads[Starting threads]
