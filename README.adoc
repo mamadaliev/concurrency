@@ -39,4 +39,4 @@ Code examples of the multithreading basics and concurrency in JAVA language for 
 
 == Contribute
 For any problems, comments, or feedback 
-please create an issue https://github.com/egnaf/concurrency-practice/issues[here].
+please https://github.com/mamadaliev/concurrency/issues/new[create an issue].
